@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Projects — Banele Monamudi</title>
+<meta name="description" content="Networking and cybersecurity projects: Cisco Packet Tracer, Nmap scanning, Wireshark analysis, DHCP starvation simulation, VLAN configuration." />
+<link rel="canonical" href="./projects.html" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="projects">
+<div id="site-header"></div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="dot"></span>banele@sec:~$</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html" data-nav="index">Home</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="skills.html" data-nav="skills">Skills</a>
+      <a href="projects.html" data-nav="projects">Projects</a>
+      <a href="cv.html" data-nav="cv">CV</a>
+      <a href="certifications.html" data-nav="certifications">Certs</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section>
+    <div class="container">
+      <div class="eyebrow">// projects</div>
+      <h1 class="section-title">Lab work & simulations</h1>
+      <p class="section-sub">Hands-on networking and security exercises. Filter by area.</p>
+
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="networking">Networking</button>
+        <button class="chip" data-filter="security">Security</button>
+        <button class="chip" data-filter="analysis">Analysis</button>
+      </div>
+
+      <div class="grid cols-2">
+        <article class="card reveal" data-project data-tags="networking">
+         
+          <div class="project-thumb" data-label="cisco-packet-tracer.pkt">
+ <img src="images/Network Design — Cisco Packet Tracer.png" alt="My Photo" width="300">
+          </div>
+          
+          <h3>Network Design — Cisco Packet Tracer</h3>
+          <p>Multi-branch enterprise topology with switching, routing, and VLAN segmentation.</p>
+          <div><span class="tag primary">Networking</span></div>
+          <div><span class="tag">Cisco PT</span><span class="tag">VLAN</span><span class="tag">DHCP</span><span class="tag">OSPF</span></div>
+          <p style="margin-top:10px"><strong>Skills:</strong> network design, subnetting, routing.</p>
+        </article>
+
+        <article class="card reveal" data-project data-tags="security,analysis">
+          <div class="project-thumb" data-label="nmap-scan.txt">
+             <img src="images/scan-network-nmap.png" alt="My Photo" width="300">
+          </div>
+          <h3>Nmap Network Scanning</h3>
+          <p>Host discovery, service enumeration, and version detection against a controlled lab network.</p>
+          <div><span class="tag primary">Security</span></div>
+          <div><span class="tag">Nmap</span><span class="tag">Kali</span><span class="tag">Recon</span></div>
+          <p style="margin-top:10px"><strong>Skills:</strong> reconnaissance, scripting, reporting.</p>
+        </article>
+
+        <article class="card reveal" data-project data-tags="analysis">
+          <div class="project-thumb" data-label="capture.pcap">
+             <img src="images/wireshark.png" alt="My Photo" width="300">
+          </div>
+          <h3>Wireshark Packet Analysis</h3>
+          <p>Captured and dissected DNS, HTTP, and TLS traffic to identify anomalies and credentials in clear-text.</p>
+          <div><span class="tag primary">Analysis</span></div>
+          <div><span class="tag">Wireshark</span><span class="tag">PCAP</span><span class="tag">TCP/IP</span></div>
+          <p style="margin-top:10px"><strong>Skills:</strong> packet analysis, protocol understanding.</p>
+        </article>
+
+        <article class="card reveal" data-project data-tags="security,networking">
+          <div class="project-thumb" data-label="dhcp-starvation.log">
+             <img src="images/DHCP Starvation.png" alt="My Photo" width="300">
+          </div>
+          <h3>DHCP Starvation Attack Simulation</h3>
+          <p>Simulated exhaustion of a DHCP pool in a lab and validated DHCP snooping mitigations on switches.</p>
+          <div><span class="tag primary">Security</span></div>
+          <div><span class="tag">Yersinia</span><span class="tag">Cisco</span><span class="tag">DHCP Snooping</span></div>
+          <p style="margin-top:10px"><strong>Skills:</strong> attack simulation, mitigation, hardening.</p>
+        </article>
+
+        <article class="card reveal" data-project data-tags="networking">
+          <div class="project-thumb" data-label="vlan-lab.pkt">
+             <img src="images/VLAN-Routing.jpg" alt="My Photo" width="300">
+          </div>
+          <h3>VLAN Configuration Lab</h3>
+          <p>Designed inter-VLAN routing with 802.1Q trunks and validated isolation between departments.</p>
+          <div><span class="tag primary">Networking</span></div>
+          <div><span class="tag">VLAN</span><span class="tag">Trunking</span><span class="tag">L3 Switch</span></div>
+          <p style="margin-top:10px"><strong>Skills:</strong> VLANs, trunking, inter-VLAN routing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/projects.js"></script>
+</body>
+</html>
+
+<footer class="site-footer">
+  <div class="container row">
+    <span>© <span id="year"></span> Banele Monamudi · Cybersecurity & IT Support</span>
+    <span>
+      <a href="mailto:banele@example.com">Email</a> ·
+      <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a> ·
+      <a href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </div>
+</footer>
